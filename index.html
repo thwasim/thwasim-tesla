@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/tesla.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <title>Tesla</title>
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Existing Inventory</a>
+        <a href="#">Used Inventory</a>
+        <a href="#">Trade-In</a>
+        <a href="#">Test Drive</a>
+        <a href="">Cybertruck</a>
+        <a href=""> Roadster</a>
+        <a href="">Semi</a>
+        <a href="">Charging</a>
+        <a href="">Powerwall</a>
+        <a href="">Commercial Energy</a>
+        <a href="">Utilities</a>
+        <a href="">Find Us</a>
+        <a href="">Support</a>
+        <a href="">Investor Relations</a>
+    </div>
+    <div class="containerr">
+        <nav>
+            <div id="tesla-logo">
+                <a style="color: black;" title="TESLA" href="index.html"><svg
+                        class="tds-icon tds-icon-logo-wordmark tds-site-logo-icon" viewBox="0 0 342 35"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0 .1a9.7 9.7 0 007 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 007-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 006-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 00-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 007.1-7H78.3a9.6 9.6 0 007 7zm0 13.8h26a9.6 9.6 0 007.1-7H78.3a9.6 9.6 0 007 7zm0 14.1h26a9.6 9.6 0 007.1-7H78.3a9.6 9.6 0 007 7zM308.5 7h26a9.6 9.6 0 007-7h-40a9.6 9.6 0 007 7z"
+                            fill="currentColor"></path>
+                    </svg></a>
+            </div>
+            <div id="nav-mid">
+                <a class="btn" onclick="toSectionOne()" >Model 3</a>
+                <a class="btn" onclick="toSectionTwo()" >Model Y</a>
+                <a class="btn" onclick="toSectionThree()">Model S</a>
+                <a class="btn" onclick="toSectionFour()" >Model X</a>
+                <a class="btn" onclick="toSectionFive()" >Solar Roofs</a>
+                <a class="btn" onclick="toSectionSix()" >Solar Panels</a>
+            </div>
+            <div id="nav-right">
+                <a class="btn want-hidden" href="#">Shop</a>
+                <a class="btn want-hidden" href="#">Account</a>
+                <a class="btn" onclick="openNav()" style="padding-right:45px">Menu</a>
+
+            </div>
+
+        </nav>
+
+        <main>
+
+            <section id="section-1" style="background-image: url(images/M3.jpeg);">
+                <div class="section-title1">
+                    <h1 class="fade-in-bottom " id="title-1"> Model 3</h1>
+                    <div style="display: flex;">
+                        <p class="fade-in-bottom-p">Order Online for &nbsp; <a style="color: black;" href="#">Touchless
+                                Delivery</a></p>
+                    </div>
+
+                </div>
+                <div class="section-buttons1">
+                    <div>
+                        <a class="fade-in-left" style="background-color: rgba(23, 26, 32, 0.8);color:white"
+                            href="#">CUSTOM ORDER</a>
+                        <a class="fade-in-right" style="background-color: rgba(244, 244, 244, 0.65);color:gray"
+                            href="#">EXISTING INVENTORY</a>
+                    </div>
+                </div>
+                <div class="expand-more bounce-bottom">
+                    <img src="images/scroll-down.png" alt="">
+                </div>
+            </section>
+            <section id="section-2" style="background-image: url(images/MY.jpeg);">
+                <div class="section-title1">
+                    <h1 id="title-1"> Model Y</h1>
+                    <div style="display: flex;">
+                        <p>Order Online for &nbsp; <a style="color: black;" href="#">Touchless Delivery</a></p>
+                    </div>
+
+                </div>
+                <div class="section-buttons1">
+                    <div>
+                        <a style="background-color: rgba(23, 26, 32, 0.8);color:white" href="#">CUSTOM ORDER</a>
+                        <a style="background-color: rgba(244, 244, 244, 0.65);color:gray" href="#">EXISTING
+                            INVENTORY</a>
+                    </div>
+                </div>
+            </section>
+            <section id="section-3" style="background-image: url(images/MS.jpeg);">
+                <div class="section-title1">
+                    <h1 id="title-1"> Model S</h1>
+                    <div style="display: flex;">
+                        <p>Order Online for &nbsp; <a style="color: black;" href="#">Touchless Delivery</a></p>
+                    </div>
+
+                </div>
+                <div class="section-buttons1">
+                    <div>
+                        <a style="background-color: rgba(23, 26, 32, 0.8);color:white" href="#">CUSTOM ORDER</a>
+                        <a style="background-color: rgba(244, 244, 244, 0.65);color:gray" href="#">EXISTING
+                            INVENTORY</a>
+                    </div>
+                </div>
+            </section>
+            <section id="section-4" style="background-image: url(images/MX.jpeg);">
+                <div class="section-title1">
+                    <h1 id="title-1"> Model X</h1>
+                    <div style="display: flex;">
+                        <p>Order Online for &nbsp; <a style="color: black;" href="#">Touchless Delivery</a></p>
+                    </div>
+
+                </div>
+                <div class="section-buttons1">
+                    <div>
+                        <a style="background-color: rgba(23, 26, 32, 0.8);color:white" href="#">CUSTOM ORDER</a>
+                        <a style="background-color: rgba(244, 244, 244, 0.65);color:gray" href="#">EXISTING
+                            INVENTORY</a>
+                    </div>
+                </div>
+            </section>
+            <section id="section-5" style="background-image: url(images/solar-home.jpeg);">
+                <div class="section-title1">
+                    <h1 id="title-1"> Solar Panels</h1>
+                    <div style="color: black;">
+                        <p>Lowest Cost Solar Panels in America</p>
+                    </div>
+
+                </div>
+                <div class="section-buttons1">
+                    <div>
+                        <a style="background-color: rgba(23, 26, 32, 0.8);color:white" href="#">ORDER NOW</a>
+                        <a style="background-color: rgba(244, 244, 244, 0.65);color:gray" href="#">LEARN MORE</a>
+                    </div>
+                </div>
+            </section>
+            <section id="section-6" style="background-image: url(images/solar-home2.jpeg);">
+                <div class="section-title1">
+                    <h1 id="title-1">Solar Roof</h1>
+                    <div>
+                        <p style="color: black;">Produce Clean Energy From Your Roof</p>
+                    </div>
+
+                </div>
+                <div class="section-buttons1">
+                    <div>
+                        <a style="background-color: rgba(23, 26, 32, 0.8);color:white" href="#">ORDER NOW</a>
+                        <a style="background-color: rgba(244, 244, 244, 0.65);color:gray" href="#">LEARN MORE</a>
+                    </div>
+                </div>
+            </section>
+            <section id="section-7" style="background-image: url(images/Accessories.jpeg);">
+                <div class="section-title1">
+                    <h1 id="title-1"> Accessories</h1>
+                </div>
+                <div class="section-buttons1">
+                    <div>
+                        <a style="background-color: rgba(23, 26, 32, 0.8);color:white" href="#">SHOP NOW</a>
+                    </div>
+                </div>
+                <footer>
+                    <ul>
+                        <li>Tesla © 2022</li>
+                        <li>Privacy & Legal</li>
+                        <li>Vehicle Recalls</li>
+                        <li>Careers</li>
+                        <li>News</li>
+                        <li>Engage</li>
+                        <li>Locations</li>
+                    </ul>
+                </footer>
+            </section>
+
+    </div>
+    </main>
+</body>
+<script src="tesla.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

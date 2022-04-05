@@ -1,0 +1,377 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+}
+
+html {
+    scroll-snap-type: y mandatory;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    scroll-snap-align: start;
+    transition: 0.6;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+nav {
+    width: 100vw;
+    height: 3rem;
+    background: transparent;
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+
+}
+
+svg {
+    width: 120px;
+    height: 24px;
+    cursor: pointer;
+
+}
+main {
+    display: grid;
+}
+
+/* navigation  menu */
+#tesla-logo {
+    width: 25vw;
+    padding: 14px 0 0 45px;
+}
+
+#nav-mid {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50vw;
+    font-size: 0.2rem;
+}
+
+#nav-right {
+    align-items: center;
+    width: 25vw;
+    display: flex;
+    justify-content: end;
+}
+
+#nav-mid a {
+    padding-top: 15px;
+}
+
+/* section 1 head  */
+.section-title1 {
+    margin-top: 15vh;
+    display: grid;
+    justify-content: center;
+    height: 25vh;
+
+}
+
+#title-1 {
+    text-align: center;
+}
+
+.section-buttons1 {
+    margin-top: 36vh;
+    display: flex;
+    justify-content: center;
+    height: 16vh;
+}
+
+.section-buttons1 div {
+    display: flex;
+    gap: 1.8rem;
+}
+
+.section-buttons1 div a {
+    text-align: center;
+    padding-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: small;
+    width: 16rem;
+    height: 2.5rem;
+    border-radius: 1.5rem;
+    font-weight: 600;
+    backdrop-filter: blur(8px);
+}
+.expand-more {
+    height: 1rem;
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.bounce-bottom {
+	        animation: bounce-bottom 2s 800ms infinite both;
+}
+@keyframes bounce-bottom {
+    0% {
+              transform: translateY(7px);
+              animation-timing-function: ease-in;
+      opacity: 1;
+    }
+    24% {
+      opacity: 1;
+    }
+    40% {
+              transform: translateY(7px);
+              animation-timing-function: ease-in;
+    }
+    65% {
+    
+              transform: translateY(5px);
+              animation-timing-function: ease-in;
+    }
+    82% {
+      -webkit-transform: translateY(3px);
+              transform: translateY(3px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    93% {
+      -webkit-transform: translateY(1px);
+              transform: translateY(1px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    25%,
+    55%,
+    75%,
+    87% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
+  }
+
+/* slider menu  */
+
+.sidenav {
+    height: 110vh;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: -67px;
+    right: 0;
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 70px;
+
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    background-color: #d3c9c972;
+    color: black;
+    border-radius: 20px;
+}
+
+.sidenav .closebtn {
+    /* position: absolute; */
+    top: auto;
+    right: 25px;
+    font-size: 25px;
+  margin-left: 175px;
+}
+/* footer section  */
+footer{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    }
+    footer ul {
+    display: flex;
+    }
+    footer ul li{
+        list-style: none;
+        padding-right: 1rem;
+        font-size: smaller;
+        font-weight: 500;
+        color: gray;
+    }
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+/* fade in left animatiion */
+
+.fade-in-left {
+    animation: fade-in-left 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) 500ms both;
+}
+
+@keyframes fade-in-left {
+    0% {
+        -webkit-transform: translateX(-50px);
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* fade in right animatiion */
+
+.fade-in-right {
+    animation: fade-in-right 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) 500ms both;
+}
+
+@keyframes fade-in-right {
+    0% {
+        -webkit-transform: translateX(50px);
+        transform: translateX(50px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* fade in bottom animation  */
+.fade-in-bottom {
+    animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000)  both;
+}
+
+@keyframes fade-in-bottom {
+    0% {
+        -webkit-transform: translateY(50px);
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.fade-in-bottom-p {
+    animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) 500ms both;
+}
+@keyframes fade-in-bottom-p {
+    0% {
+        -webkit-transform: translateY(50px);
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* resposive contents  */
+@media screen and (max-width: 1200px) {
+    #nav-mid, .want-hidden {
+        visibility: hidden;
+    }
+}
+@media screen and (max-width: 900px) {
+    section:nth-of-type(1) {
+        background: url("images/M3-Homepage-M.jpeg");
+        background-position: center;
+        background-size: cover;
+    }
+    section:nth-of-type(2) {
+        background: url("images/Mobile-ModelY.jpeg");
+        background-position: center;
+        background-size: cover;
+    }
+    section:nth-of-type(3) {
+        background: url("images/ms-homepage-mobile.jpeg");
+        background-position: center;
+        background-size: cover;
+    }
+    section:nth-of-type(4) {
+        background: url("images/ModelX-Homepage-M.jpeg");
+        background-position: center;
+        background-size: cover;
+    }
+    section:nth-of-type(5) {
+        background: url("images/_25-HP-SolarPanels-M.jpeg");
+        background-position: center;
+        background-size: cover;
+    }
+    section:nth-of-type(6) {
+        background: url("images/HP-SR-Design-M.jpeg");
+        background-position: center;
+        background-size: cover;
+    }
+    section:nth-of-type(7) {
+        background: url("images/Mobile-Accessories.jpeg");
+        background-position: center;
+        background-size: cover;
+    }
+
+}
+@media screen and (max-width :600px) {
+    .section-buttons1 div {
+        display: grid;
+    }
+    section:nth-of-type(1) div:nth-of-type(3) {
+        visibility: hidden;
+    }
+    footer ul {
+        display: grid;
+        text-align: center;
+    }
+    section {
+        height: 90vh;
+        scroll-snap-align: none;
+
+    }
+    .section-buttons1 {
+        margin-top: 25vh;
+    }
+    section:nth-of-type(7) .section-buttons1 div {
+        height: 30vh;
+    }
+}    
+
